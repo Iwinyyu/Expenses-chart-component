@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./dist/style.css" />
+
+    <title>Frontend Mentor | Expenses chart component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <main>
+      <div class="balance">
+        <div class="money"><span class="bal-txt">My balance</span>$921.48</div>
+        <div class="icon">
+          <img src="./images/logo.svg" alt="" class="icon" />
+        </div>
+      </div>
+      <div class="spending">
+        <h1 class="spending-title">Spending - Last 7 days</h1>
+        <div class="chart">
+          <div class="graph-style mon">
+            <span class="amount">$20.00</span><span class="graph"></span
+            ><span class="date">mon</span>
+          </div>
+          <div class="graph-style tue">
+            <span class="amount">$20.00</span><span class="graph"></span
+            ><span class="date">tue</span>
+          </div>
+          <div class="graph-style wed">
+            <span class="amount">$20.00</span><span class="graph"></span
+            ><span class="date">wed</span>
+          </div>
+          <div class="graph-style thu">
+            <span class="amount">$20.00</span><span class="graph"></span
+            ><span class="date">thu</span>
+          </div>
+          <div class="graph-style fri">
+            <span class="amount">$20.00</span><span class="graph"></span
+            ><span class="date">fri</span>
+          </div>
+          <div class="graph-style sat">
+            <span class="amount">$20.00</span><span class="graph"></span
+            ><span class="date">sat</span>
+          </div>
+          <div class="graph-style sun">
+            <span class="amount">$20.00</span><span class="graph"></span
+            ><span class="date">sun</span>
+          </div>
+        </div>
+        <div class="bottom-text">
+          <div class="month-spending">
+            <span class="bal-txt">Total this month</span>$478.33
+          </div>
+          <div class="change-over-month">
+            +2.4% <span class="bal-txt">from last month</span>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+  </html>

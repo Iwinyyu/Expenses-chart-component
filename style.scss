@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+:root {
+  --Soft-red: hsl(10, 79%, 65%);
+  --Cyan: hsl(186, 34%, 60%);
+
+  // Neutral
+
+  --Dark-brown: hsl(25, 47%, 15%);
+  --Medium-brown: hsl(28, 10%, 53%);
+  --Cream: hsl(27, 66%, 92%);
+  --Very-pale-orange: hsl(33, 100%, 98%);
+
+  // ## Typography
+  // ### Body Copy
+
+  --Font-size: 18px;
+
+  // ### Font
+
+  --font-DM-Sans: "DM sans", sans-serif;
+  --Weights: 400, 700;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-DM-Sans);
+}
+
+body {
+  height: 100vh;
+  background-color: var(--Cream);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.balance {
+  margin-bottom: 1rem;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: white;
+  padding: 1.2rem;
+  background-color: var(--Soft-red);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bal-txt {
+  font-weight: 400;
+  color: white;
+  font-size: 1rem;
+  display: grid;
+}
+.icon {
+  width: 4rem;
+}
+
+.spending {
+  border-radius: 0.6rem;
+  background-color: var(--Very-pale-orange);
+  padding: 1.5rem 1rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.chart {
+  height: 14rem;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: solid 3px var(--Cream);
+}
+.amount {
+  padding: 5px 1px;
+  border-radius: 0.2rem;
+  font-size: 0.6rem;
+  text-align: center;
+  width: 2.7rem;
+  color: white;
+  background-color: black;
+  visibility: hidden;
+}
+.graph-style {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+}
+.graph-style:active > .amount {
+  visibility: visible;
+}
+.graph {
+  border-radius: 0.2rem;
+  height: 35%;
+  width: 2rem;
+  background-color: var(--Soft-red);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  font-size: 0.7rem;
+  color: grey;
+}
+
+.bottom-text {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-align: end;
+  align-items: flex-end;
+}
+.bottom-text .bal-txt {
+  color: var(--Medium-brown);
+}
+.month-spending {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.change-over-month {
+  font-weight: 700;
+}
+
+@media screen and(min-width: 35em) {
+  main {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .chart {
+    height: 13rem;
+  }
+  .amount {
+    width: 3.5rem;
+  }
+  .graph {
+    width: 2.5rem;
+  }
+}
